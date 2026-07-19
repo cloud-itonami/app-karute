@@ -1,0 +1,20 @@
+{
+  "@context": "https://etzhayyim.com/ns/project/v1",
+  "@id": "did:web:karute.etzhayyim.com",
+  "name": "etzhayyim-project-karute",
+  "displayName": "Karute — 電子カルテ EMR",
+  "actorDid": "did:web:karute.etzhayyim.com",
+  "nanoid": "karu7t3e",
+  "tier": "T1",
+  "actorManifest": "orgs/etzhayyim/com-etzhayyim-karute/manifest.edn",
+  "lexicons": [
+    "00-contracts/lexicons/com/etzhayyim/apps/karute/",
+    "00-contracts/lexicons/com/etzhayyim/karute/"
+  ],
+  "primaryAdr": "90-docs/adr/2605231100-karute-emr-phase1.md",
+  "appviewWasm": "appview/etzhayyim-wasm-karute-karu7t3e",
+  "domains": {
+    "ui": "https://karute.etzhayyim.com",
+    "api": "https://karu7t3e.etzhayyim.com/xrpc"
+  }
+}
