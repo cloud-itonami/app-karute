@@ -1,1 +1,1 @@
-{:schema "etzhayyim.repository/readme-v1" :name "com-etzhayyim-app-karute" :kind :application :source "etzhayyim/root/60-apps/etzhayyim-project-karute"}
+{:schema "etzhayyim.repository/readme-v1" :name "app-karute" :kind :application :source "etzhayyim/root/60-apps/etzhayyim-project-karute"}
