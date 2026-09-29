@@ -2,7 +2,7 @@
 
 actor: `did:web:karute.etzhayyim.com` (nanoid `karu7t3e`).
 
-See `orgs/etzhayyim/com-etzhayyim-karute/CLAUDE.md` for the authoritative architecture doc.
+See `orgs/etzhayyim/com-etzhayyim-karute/AGENTS.md` for the authoritative architecture doc.
 This file documents the Svelte SuperApp UI only.
 
 ## Build

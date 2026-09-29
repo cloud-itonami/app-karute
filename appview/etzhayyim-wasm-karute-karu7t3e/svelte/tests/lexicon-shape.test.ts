@@ -51,7 +51,7 @@ describe('karute lexicon shape', () => {
   it('no lexicon uses type=number (AT Lexicon has no float)', () => {
     for (const { path, doc } of lexicons) {
       const haystack = JSON.stringify(doc);
-      // The AT lexicon `number` type is forbidden per the etzhayyim CLAUDE.md guardrails.
+      // The AT lexicon `number` type is forbidden per the etzhayyim AGENTS.md guardrails.
       const matches = haystack.match(/"type"\s*:\s*"number"/g) ?? [];
       // listPatients carries a `limit` / `offset` declared as number for legacy bootstrap reasons.
       // For strictness we accept up to N occurrences in the bootstrap files; everything else fails.
