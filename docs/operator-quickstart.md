@@ -32,7 +32,7 @@ git ls-files | grep -v '^appview/' | sort               # メタデータと文�
 期待される出力:
 
 ```
-CLAUDE.md
+AGENTS.md
 NOTICE
 OWNERS
 PROJECT.jsonld
@@ -68,13 +68,13 @@ grep -rn "fetch(" src/ | awk -F: '{print $1}' | sort | uniq -c
 
 ## Step 3 — actor identity が 3 箇所で一致しているか
 
-DID / nanoid は `PROJECT.jsonld`・`CLAUDE.md`・実際の API ホスト名の
+DID / nanoid は `PROJECT.jsonld`・`AGENTS.md`・実際の API ホスト名の
 3 箇所に書かれている。ずれると deploy 先を間違える。
 
 ```bash
 cd -                                  # repo root へ戻る
-grep -oh 'did:web:[a-z.]*' PROJECT.jsonld CLAUDE.md | sort -u
-grep -oh 'karu7t3e'        PROJECT.jsonld CLAUDE.md | sort -u
+grep -oh 'did:web:[a-z.]*' PROJECT.jsonld AGENTS.md | sort -u
+grep -oh 'karu7t3e'        PROJECT.jsonld AGENTS.md | sort -u
 ```
 
 期待される出力（実測 2026-08-18）—— **どちらも 1 行であること。**
@@ -87,7 +87,7 @@ karu7t3e
 
 ## Step 4 — build を試すと何が起きるか（**通らない**）
 
-`CLAUDE.md` は次を指示しているが、**この repo 単体では Step 1 の install で止まる。**
+`AGENTS.md` は次を指示しているが、**この repo 単体では Step 1 の install で止まる。**
 
 ```bash
 cd appview/etzhayyim-wasm-karute-karu7t3e/svelte

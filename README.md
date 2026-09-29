@@ -20,9 +20,9 @@
 FHIR R5 互換のドメイン（Patient / Encounter / SOAP / Observation /
 Condition / MedicationRequest / ServiceRequest）と 11 本の lexicon
 （`lex/*.edn`）はそちらに在る。アーキテクチャの正本は
-`orgs/cloud-itonami/karute/CLAUDE.md`。
+`orgs/cloud-itonami/karute/AGENTS.md`。
 
-⚠ **この repo の `CLAUDE.md` はその正本を `orgs/etzhayyim/com-etzhayyim-karute/CLAUDE.md`
+⚠ **この repo の `AGENTS.md` はその正本を `orgs/etzhayyim/com-etzhayyim-karute/AGENTS.md`
 という古いパスで指している。そのパスは west.yml に無く、checkout も存在しない**
 （実測 2026-08-18）。repo は `cloud-itonami/karute` に改名済みで、GitHub
 リダイレクトは効くがローカルのパス参照は解決しない。
@@ -71,7 +71,7 @@ grep -rn "fetch(" src/ | awk -F: '{print $1}' | sort | uniq -c
 
 ## この repo は今日 standalone では build できない
 
-抽出時に monorepo への結合が 3 本残っており、`CLAUDE.md` に書かれた
+抽出時に monorepo への結合が 3 本残っており、`AGENTS.md` に書かれた
 `pnpm install` → `pnpm build` は**この repo 単体では通らない**。
 再現手順と実測した失敗は `docs/operator-quickstart.md` に書いてある。
 要約すると:
